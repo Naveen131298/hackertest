@@ -1,8 +1,15 @@
+##
+import matplotlib.pyplot as plt
 import pandas as pd
 data=pd.read_csv('hm_train.csv')
 data_test=pd.read_csv('hm_test.csv')
 hm_test=data_test['cleaned_hm']
 x=data['cleaned_hm']
+##
+plt.plot((1,2),(1,3))
+plt.show(2,3)
+
+##
 #,'hmid','reflection_period','num_sentence']]
 
 y=data['predicted_category']

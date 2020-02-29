@@ -3,11 +3,14 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
+##
 import numpy as np
 import pandas as pd
+pd.datetime
 df=pd.DataFrame()
 df=pd.read_csv("hm_train.csv")
-print(df)
+print(df.predicted_category)
+##
 print(np.unique(df['predicted_category']))
 x=df.iloc[:,:-1].values
 df1=pd.DataFrame()
@@ -63,3 +66,5 @@ for i in gnb_predictions:
     '''
     list.append(out[i])
     print(out[i])
+##
+

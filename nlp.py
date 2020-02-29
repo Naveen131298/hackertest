@@ -41,7 +41,8 @@ y = labelencoder_y.fit_transform(y)
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = 0.30, random_state=0)
 from sklearn.naive_bayes import GaussianNB
 gnb = GaussianNB().fit(xtrain, ytrain)
-gnb_predictions = gnb.predict(xtest)
+gnb_predictions = gnb.predict('a b c')
+print(gnb_predictions)
 accuracy = gnb.score(xtest, ytest)
 print(accuracy)
 out=['achievement','affection' ,'bonding', 'enjoy_the_moment' ,'exercise', 'leisure', 'nature' ]
